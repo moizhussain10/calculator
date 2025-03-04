@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div>
+            <input type="text" class="display" id="display" value="0" disabled>
+        </div>
+        <div class="buttons">
+            <input type="button" value="%" onclick="appendCharacter('%')">
+            <input type="button" value="CE" onclick="clearEntry()">
+            <input type="button" value="C" onclick="clearDisplay()">
+            <input type="button" value="⌫" onclick="backspace()">
+        </div>
+        <div class="buttons">
+            <input type="button" value="7" onclick ="appendCharacter('7')" >
+            <input type="button" value="8" onclick ="appendCharacter('8')">
+            <input type="button" value="9" onclick ="appendCharacter('9')">
+            <input type="button" value="/" onclick ="appendCharacter('/')">
+        </div>
+        <div class="buttons">
+            <input type="button" value="4" onclick ="appendCharacter('4')">
+            <input type="button" value="5" onclick ="appendCharacter('5')">
+            <input type="button" value="6" onclick ="appendCharacter('6')">
+            <input type="button" value="x" onclick ="appendCharacter('x')">
+        </div>
+        <div class="buttons">
+            <input type="button" value="1" onclick ="appendCharacter('1')">
+            <input type="button" value="2" onclick ="appendCharacter('2')">
+            <input type="button" value="3" onclick ="appendCharacter('3')">
+            <input type="button" value="+" onclick ="appendCharacter('+')">
+        </div>
+        <div class="buttons">
+            <input type="button" value="." onclick ="appendCharacter('.')">
+            <input type="button" value="0" onclick ="appendCharacter('0')">
+            <input type="button" value="=" onclick ="calculateResult()">
+            <input type="button" value="-" onclick ="appendCharacter('-')">
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
