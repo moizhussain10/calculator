@@ -34,7 +34,7 @@ function backspace() {
 
 function calculateResult() {
     let expression = display.value;
-    let result = 0;
+    let result = "";
     let operator = '';
     let num1 = '';
     let num2 = '';
