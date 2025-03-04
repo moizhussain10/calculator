@@ -59,7 +59,7 @@ function calculateResult() {
         result = num1 + num2;
     } else if (operator === '-') {
         result = num1 - num2;
-    } else if (operator === '*') {
+    } else if (operator === 'x') {
         result = num1 * num2;
     } else if (operator === '/') {
         result = num2 !== 0 ? num1 / num2 : 'Error';
