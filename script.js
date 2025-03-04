@@ -5,9 +5,9 @@ function appendCharacter(char) {
     let lastChar = display.value[display.value.length - 1];
     if (['+', '-', 'x', '/', '%'].includes(lastChar) && ['+', '-', 'x', '/', '%'].includes(char)) {
         if (lastChar === char) {
-            return; // Prevent adding the same consecutive operator
+            return; 
         } else {
-            display.value = display.value.slice(0, -1) + char; // Replace the last operator with the new one
+            display.value = display.value.slice(0, -1) + char; 
             return;
         }
     }
