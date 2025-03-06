@@ -1,9 +1,20 @@
 let display = document.getElementById("display");
 let memory = 0;
 
+function isOperator(char) {
+    let operators = ['+', '-', 'x', '/', '%'];
+    for (let i = 0; i < operators.length; i++) {
+        if (operators[i] === char) {
+            return true; 
+        }
+    }
+    return false; 
+}
+
 function appendCharacter(char) {
     let lastChar = display.value[display.value.length - 1];
-    if (['+', '-', 'x', '/', '%'].includes(lastChar) && ['+', '-', 'x', '/', '%'].includes(char)) {
+
+    if (isOperator(lastChar) && isOperator(char)) {
         if (lastChar === char) {
             return; 
         } else {
@@ -11,6 +22,7 @@ function appendCharacter(char) {
             return;
         }
     }
+
     if (display.value === "0" && char !== ".") {
         display.value = char;
     } else {
